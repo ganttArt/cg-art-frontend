@@ -1,11 +1,2 @@
-import type { NextPage } from 'next'
-
-const Home: NextPage = () => {
-  return (
-    <div>
-      Hello World
-    </div>
-  )
-}
-
-export default Home
+const { Page, getServerSideProps } = await import("../src/home-page/home-page");
+export { Page as default, getServerSideProps };
