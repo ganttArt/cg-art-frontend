@@ -1,2 +1,2 @@
-const { Page, getServerSideProps } = await import("../src/pages/home-page");
+const { Page, getServerSideProps } = await import("@pages/home-page");
 export { Page as default, getServerSideProps };
