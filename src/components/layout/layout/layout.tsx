@@ -1,6 +1,7 @@
 import React from "react";
 import { MetaData } from "@interfaces/meta-data"
 import { HeadMeta } from "../head";
+import Css from "./layout.module.scss"
 
 export interface LayoutProps {
   metaData: MetaData,
@@ -14,7 +15,7 @@ export const Layout: React.FC<LayoutProps> = ({
   return (
     <div>
       <HeadMeta metaData={metaData}/>
-      <p>header</p>
+      <p className={Css.headerText}>header</p>
       {children}
       <p>footer</p>
     </div>
